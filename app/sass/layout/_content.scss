@@ -1,0 +1,46 @@
+.content{
+  background-color: $bg_green;
+  min-height: 300px;
+  font-family: $font_opensans;
+  color: $f_black;
+  .content-text{
+    h1{
+      font-size: $fs_h1;
+      margin: 40px 0;
+      text-align: center;
+      text-shadow: $shadow_white;
+      line-height: 36px;
+    }
+    p.article{
+      font-size: $fs_p;
+      line-height: 28px;
+      margin: 20px 0;
+      padding-left: 45px;
+      position: relative;
+      @include before-absolute{
+        background: url("../images/sprite.png");
+        left: 0;
+        top: 4px;
+        width: 32px;
+        height: 32px;
+      }
+      &.first{
+        @include before-absolute{
+          background-position: -5px -5px;
+        }
+      }
+      &.second{
+        @include before-absolute{
+          background-position: -5px -47px;
+        }
+      }
+      &.third{
+        @include before-absolute{
+          background-position: -5px -89px;
+        }
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+}

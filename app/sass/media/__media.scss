@@ -1,0 +1,139 @@
+@media (max-width: 991px){
+  header{
+    nav{
+      text-align: left;
+    }
+  }
+  section{
+    .section-text{
+      h1{
+        line-height: 36px;
+        font-size: $fs_h1_991;
+      }
+      p{
+        font-size: $fs_p_991;
+        line-height: 30px;
+      }
+      button{
+        font-size: $fs_button_991;
+      }
+    }
+  }
+
+  .content{
+    .content-text{
+      h1{
+        font-size: $fs_h1_991;
+      }
+      p.article{
+        font-size: $fs_p_991;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  header{
+    .logo{
+      text-align: center;
+      font-size: $fs_logo_767;
+    }
+    nav{
+      position: relative;
+      .top-nav-button{
+        display: block;
+      }
+      ul{
+        //opacity: 0;
+        display: none;
+        position: absolute;
+        left: 11%;
+        right: 11%;
+        @include transition(0.6s opacity);
+        z-index: 2;
+        background-color: rgba(131, 175, 155, 0.7);
+        li{
+          display: block;
+          margin: 15px 0;
+          &:first-child{
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  section{
+    .section-text{
+      text-align: center;
+      button{
+        margin-left: 10px;
+      }
+    }
+    .section-img{
+      display: none;
+    }
+  }
+  .owl-carousel{
+    margin-left: 0;
+    .owl-nav{
+      .owl-next{
+        right: 5px;
+      }
+      .owl-prev{
+        left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px){
+  header{
+    padding: 10px 0;
+    nav{
+      font-size: $fs_nav_650;
+    }
+  }
+  section{
+    padding-top: 20px;
+    min-height: 150px;
+    .section-text{
+      margin-bottom: 20px;
+      h1{
+        font-size: $fs_h1_650;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: $fs_p_650;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .content{
+    .content-text{
+      h1{
+        font-size: $fs_h1_650;
+        margin: 20px 0 10px;
+      }
+      p.article{
+        height: 90px;
+        overflow: hidden;
+        font-size: $fs_p_650;
+        margin: 5px 0;
+        &.third{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  #feedback_form{
+    padding: 20px 0 10px;
+  }
+}
+@media (max-width: 480px){
+  .owl-carousel{
+    .owl-nav{
+      display: none;
+    }
+  }
+}

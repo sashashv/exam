@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final practice for certification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Итоговая работа по курсу 'Front-end Developer' Шевченко Александры">
+    <meta name="keywords" content="exam, front-end, practice, brain academy, html, css, javascript, bootstrap">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="for_lang">
+            <div class="translate" id="en">EN</div>
+            <div class="translate" id="ru">RU</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo animated bounceInLeft">
+                        My <span>Logo</span>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <nav class="wow fadeInRight" data-wow-delay="0.2s">
+                        <button class="top-nav-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul>
+                            <li><a class="animated lang" key="item" href="#">Item</a></li>
+                            <li><a class="animated lang" key="item" href="#">Item</a></li>
+                            <li><a class="animated lang" key="item" href="#">Item</a></li>
+                            <li><a class="animated lang" key="item" href="#">Item</a></li>
+                            <li><a class="animated lang" key="item" href="#">Item</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="section-text">
+                        <h1 class="lang wow fadeInLeft" data-wow-delay="0.2s" key="section h1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                        <p class="lang wow fadeInLeft" data-wow-delay="0.3s" key="section p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Alias autem consequuntur culpa, ipsam quis repudiandae?
+                            A impedit laborum, maiores nemo nihil officiis quia quibusdam.
+                        </p>
+                        <button class="first lang wow fadeInLeft" data-wow-delay="0.4s" key="button first"> Lorem </button>
+                        <button class="second lang wow fadeInLeft" data-wow-delay="0.4s" key="button second"> Ipsum </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="section-img wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="images/section.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-text">
+                        <h1 class="lang" key="content h1">Accusantium doloremque ea eos error et harum inventore iure</h1>
+                        <p class="article first lang" key="content p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto mollitia officia quia reprehenderit. Aliquid aperiam atque et facilis illo maiores nam nihil, nisi, quas quis quos saepe suscipit voluptatem.</p>
+                        <p class="article second lang" key="content p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque consectetur corporis cupiditate debitis dolores ducimus explicabo fuga inventore iste magnam magni molestiae molestias obcaecati porro quia, repellendus tempora vero!</p>
+                        <p class="article third lang" key="content p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est ex itaque perferendis possimus provident reprehenderit similique! Facilis impedit inventore nostrum totam. Doloremque error excepturi fugiat libero, quod totam voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pixabay_widget">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Enter a keyword for searchig pictires or videos:</h1>
+                        <form name="box" action="">
+                            <input type="text" name="keyword">
+                            <label><input type="radio" name="search" value="photo">Photo</label>
+                            <label><input type="radio" name="search" value="video">Video</label>
+                            <button class="send_request">Send request</button>
+                        </form>
+                        <div id="container_photo"></div>
+                        <div id="container_video"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel">
+                        <div class="slide">
+                            <div class="pic">
+                                <img src="images/owl1.jpg" alt="homer">
+                            </div>
+                            <div class="caption lang" key="caption img">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="pic">
+                                <img src="images/owl2.png" alt="homer">
+                            </div>
+                            <div class="caption lang" key="caption img">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="pic">
+                                <img src="images/owl3.png" alt="homer">
+                            </div>
+                            <div class="caption lang" key="caption img">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="pic">
+                                <img src="images/owl2.png" alt="homer">
+                            </div>
+                            <div class="caption lang" key="caption img">
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="feedback_form"></div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+header{
+  color: $f_pink;
+  background-color: $bg_green;
+  font-weight: bold;
+  text-shadow: $shadow_black;
+  padding: 30px 0;
+  position: relative;
+  .logo{
+    font-size: $fs_logo;
+    span{
+      color: $f_champ
+    }
+  }
+  .for_lang{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    #en, #ru {
+      display: inline-block;
+      margin-left: 35px;
+      color: $f_pink_light;
+      position: relative;
+      cursor: pointer;
+      @include before-absolute {
+        width: 23px;
+        height: 17px;
+        right: 30px;
+      }
+      @include on-state{
+        color: $f_pink;
+      }
+    }
+    #en{
+      @include before-absolute{
+        background: url("../images/en.png") no-repeat;
+      }
+    }
+    #ru{
+      @include before-absolute{
+        background: url("../images/ru.png") no-repeat;
+      }
+    }
+  }
+  nav{
+    font-size: $fs_nav;
+    margin-top: 10px;
+    text-align: right;
+    .top-nav-button{
+      display: none;
+      margin: 20px auto 0;
+      padding: 9px 10px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: $f_pink;
+      span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: $bg_champ;
+        border-radius: 1px;
+        margin-top: 4px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    ul{
+      li{
+        display: inline-block;
+        padding: 5px 15px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          display: inline-block;
+          text-decoration: none;
+          color: $f_pink_light;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

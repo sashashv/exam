@@ -1,0 +1,51 @@
+%button-element{
+  background-color: $bg_pink;
+  border-bottom: 3px solid;
+  color: $f_champ;
+  padding: 10px 20px;
+  border-color: transparent transparent $border_button transparent;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  outline: none;
+  font-size: $fs_button;
+  text-transform: uppercase;
+  text-shadow: $shadow_black;
+  &:active, &:hover{
+    -webkit-box-shadow: $box_shadow_button;
+    -moz-box-shadow: $box_shadow_button;
+    box-shadow: $box_shadow_button;
+  }
+}
+section{
+  background-color: $bg_khaki;
+  text-shadow: $shadow_white;
+  min-height: 300px;
+  padding-top: 50px;
+  background: radial-gradient(ellipse at 50% 50%, $bg_white 35%, $bg_pink_light 100%);
+  .section-text{
+    margin-bottom: 50px;
+    h1{
+      font-size: $fs_h1;
+      color: $f_black;
+      margin-bottom: 30px;
+      line-height: 40px;
+    }
+    p{
+      font-size: $fs_p;
+      margin-bottom: 30px;
+      line-height: 36px;
+    }
+    button{
+      @extend %button-element;
+      margin-left: 30px;
+    }
+  }
+  .section-img{
+    width: 325px;
+    margin: auto;
+    img{
+      width: 100%;
+    }
+  }
+}

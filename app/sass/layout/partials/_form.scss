@@ -1,0 +1,55 @@
+#feedback_form{
+  background: url("../images/bg-form.jpg");
+  padding: 50px 0 20px;
+  font-family: $font_opensans;
+  form{
+    width: 300px;
+    margin: auto;
+    h1{
+      color: $f_pink;
+      font-size: $fs_h1;
+      text-shadow: $shadow_black;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="text"]{
+      padding: 3px 10px;
+    }
+    input[type="text"], textarea{
+      outline: none;
+      background-color: $bg_grey;
+      border: 1px solid black;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: $box_shadow_form_elem;
+      font-size: $fs_form;
+      margin-bottom: 10px;
+      width: 100%;
+      color: $f_pink;
+      &:focus{
+        box-shadow: $box_shadow_button;
+        border-color: $border_button;
+      }
+    }
+    label{
+      display: block;
+      font-size: $fs_p;
+    }
+    input, label{
+      margin-bottom: 10px;
+    }
+    textarea{
+      display: block;
+      overflow: auto;
+      resize: none;
+      padding: 5px;
+    }
+    input[type="submit"]{
+      @extend %button-element;
+      margin: 30px auto 0;
+      display: block;
+    }
+  }
+}
